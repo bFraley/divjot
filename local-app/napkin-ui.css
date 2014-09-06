@@ -1,0 +1,68 @@
+/* TODO: doc comments / license / links etc */
+
+html {
+  font-size:100%;
+  height:100%
+  margin:0;
+  padding:0; 
+}
+body {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+#napkin-wrapper {
+  min-width:540px;
+  max-width:98%;
+  max-height:98%;
+  position:fixed;
+  left:15px;
+  bottom:15px;
+  padding:3px;
+  z-index:1;
+  overflow:auto;
+  opacity:0.4;
+  white-space:nowrap;
+  text-align:left;
+  font-family:monospace;
+  font-size:1em;
+  background-color:#fff;
+  color:#222; 
+  box-shadow:0px 0px 5px 2px #333;
+}
+
+.napkin-editors {
+  min-width:250px;
+  min-height:250px;
+  max-width:80%;
+  max-height:95%;
+  padding:3px;
+  display:inline-block;
+  overflow:auto;
+  opacity:0.6;  
+}
+
+#napkin-html {  
+  border:solid 1px #008000; /* is green */
+}
+
+#napkin-css {  
+  background-color:#EEE;
+  border:solid 1px #008fcc;  
+}
+
+#napkin-js {
+  min-width:520px;
+  min-height:60px;
+  display:block;
+  border-bottom:solid 5px #ddd;
+  background-color:#555;
+  color:#00ff00; /* is lime */  
+}
+
+#napkin-wrapper:hover, #napkin-wrapper:focus,
+.napkin-editors:hover, .napkin-editors:focus {
+  opacity:1;
+}
