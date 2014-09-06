@@ -1,0 +1,24 @@
+<!-- TODO: doc comments / license / links etc -->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>a napkin page</title>
+  <meta charset = "UTF-8">
+  <link rel="stylesheet" href="napkin-ui.css">
+  <script src="napkin.js"></script>
+</head>
+
+<body>
+  <div id = "napkin-page"> <!-- This is where users' html is 'sent'--> </div>
+
+  <div id = "napkin-wrapper" spellcheck="false">
+    <textarea class="napkin-editors" id = "napkin-html" onKeyUp='napkin.html_out()' placeholder="html here" ></textarea>
+    <textarea class="napkin-editors" id = "napkin-css" onKeyUp='napkin.css_out()' placeholder="css here" ></textarea>
+    <textarea class="napkin-editors" id = "napkin-js" onKeyUp='napkin.js_out()' placeholder="js here" ></textarea>
+  </div>  <!-- end div id: napkin-wrapper -->
+
+  <style id = "napkin-style">  <!-- This is where users' css is 'sent' -->  </style>
+
+</body>
+</html>
