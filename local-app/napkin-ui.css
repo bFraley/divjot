@@ -66,3 +66,34 @@ body {
 .napkin-editors:hover, .napkin-editors:focus {
   opacity:1;
 }
+
+.editor-section {
+  margin:5px auto;
+  width:99%;    
+}
+
+/* controls */
+
+#napkin-controls {
+    padding:3px;    
+}
+
+.napkin-buttons {
+    padding:3px;
+    margin:0px, 3px, 0px, 3px;
+    border:solid 0px, 2px, 0px, 2px;
+    display:inline;
+    font-family:helvetica;   
+}
+
+#controls-content-wrapper {
+  line-height:0;
+  display:none;    
+}
+
+/* each controls page div */
+.controls-content {    
+
+}
+
+/* do #plugins, #imports, #settings */
