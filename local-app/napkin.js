@@ -7,23 +7,33 @@ Other versions need to create the napkin ui elements,
 as well as style rules, all from a single script.
 These implementations will require much more code for 
 managing ui events, and the plug-in features system.
+NOTE:This version must be complete, with any further changes
+made here. Then the changes can be implemented into 
+subsequent napkin versions.
 */
 
-var napkin = {};
+// TODO: enclose scope
 
-napkin.html_out = function () {
-  var napkin_html = document.getElementById('napkin-html').value;  
-  var napkin_page = document.getElementById('napkin-page');
-  napkin_page.innerHTML=napkin_html;
-};
+var napkinhtml = document.getElementById('napkin-html');
+var napkincss = document.getElementById('napkin-css');
+var napkinjs = document.getElementById('napkin-js');
+var usermarkup = document.getElementById('napkin-markup');
+var userstyle = document.getElementById('napkin-style');
 
-napkin.css_out = function () {
-  var napkin_css = document.getElementById('napkin-css').value;
-  var napkin_style = document.getElementById('napkin-style');
-  napkin_style.innerHTML=napkin_css;
-};
+function markup_out() { usermarkup.innerHTML=(napkinhtml.value); }
+function style_out() { userstyle.innerHTML=(napkincss.value); }
+function js_out() { return eval(napkinjs.value); }
+   
+napkinhtml.addEventListener('keyup' || 'keypress', function() {
+    markup_out(); }, false);
 
-napkin.js_out = function () {
-    var napkin_js = document.getElementById('napkin-js');
-    return eval(napkin_js.value);
-};
+napkincss.addEventListener('keypress', function() {
+    style_out(); }, false);
+
+napkinjs.addEventListener('keypress', function(key) {
+    js_out();
+}, false);
+
+
+
+  
