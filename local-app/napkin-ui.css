@@ -36,8 +36,7 @@ body {
 .napkin-editors {
   min-width:250px;
   min-height:250px;
-  max-width:80%;
-  max-height:95%;
+  max-height:90%;
   padding:3px;
   display:inline-block;
   overflow:auto;
@@ -46,20 +45,24 @@ body {
 
 #napkin-html {  
   border:solid 1px #008000; /* is green */
+  max-width:900px;
 }
 
 #napkin-css {  
   background-color:#EEE;
-  border:solid 1px #008fcc;  
+  border:solid 1px #008fcc;
+  max-width:520px;  
 }
 
 #napkin-js {
   min-width:520px;
+  max-width:900px;
   min-height:60px;
+  margin:auto;
   display:block;
   border-bottom:solid 5px #ddd;
   background-color:#555;
-  color:#00ff00; /* is lime */  
+  color:#00ff00; /* is lime */ 
 }
 
 #napkin-wrapper:hover, #napkin-wrapper:focus,
@@ -69,7 +72,7 @@ body {
 
 .editor-section {
   margin:5px auto;
-  width:99%;    
+  width:98%;    
 }
 
 /* controls */
