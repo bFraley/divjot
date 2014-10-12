@@ -1,6 +1,7 @@
 TODO.txt
 
--Add event listeners.
+
+DONE:-Add event listeners on edit areas.
 
 -Fix up 'too much opacity at start'
 
@@ -13,15 +14,18 @@ TODO.txt
 -Implement controls to collapse individual or all editors.
 
 -Add bottom menu bar for selecting feature plug-ins, control settings, and lib importing.
+-Do the imports, plugins, and settings content
 
--Do an execute button and response element for the js editor.
+DONE:-Do an execute button.
+
+-Do response element for the js editor(console / err output).
 
 -Make editor 'detachable / reatachable' in and out of it's own window
 
 -Save 'jots' with local storage
 
--Add command line and custom commands.
-    -These will manipulate napkin, the current page / dom context, and controls like save / copy etc.
+MAYBE:-Add command line and custom commands.
+      -These will manipulate napkin, the current page / dom context, and controls like save / copy etc.
 
 -Address cross-browser issues, screen sizes and orientation
     -NOTE: Doing napkin, or any web editor at all that would actually be good to use on smaller-screen mobile devices,

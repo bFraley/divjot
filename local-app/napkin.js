@@ -31,7 +31,9 @@ napkincss.addEventListener('keypress', function() {
     style_out(); }, false);
 
 napkinjs.addEventListener('keypress', function(key) {
-    js_out();
+    if (key.keyCode === 13) {
+        js_out();
+    }
 }, false);
 
 
