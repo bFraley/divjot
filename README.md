@@ -13,7 +13,7 @@ awesomely plain live web editor, akin to a napkin
 * Learning and trying out webdev example code fast.
 * Developing single web page components, UI elements, or entire sites.
 * Cross browser, device, and screen responsive testing.
-* Peace of mind, though clarifying moments of, "yes!".
+* Peace of mind, through clarifying moments of, "yes!".
  
 ###Development goals:
 ####Versions
