@@ -35,7 +35,3 @@ napkinjs.addEventListener('keypress', function(key) {
         js_out();
     }
 }, false);
-
-
-
-  
