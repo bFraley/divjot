@@ -27,7 +27,7 @@ function js_out() { return eval(napkinjs.value); }
 napkinhtml.addEventListener('keyup' || 'keypress', function() {
     markup_out(); }, false);
 
-napkincss.addEventListener('keypress', function() {
+napkincss.addEventListener('keyup' || 'keypress', function() {
     style_out(); }, false);
 
 napkinjs.addEventListener('keypress', function(key) {
