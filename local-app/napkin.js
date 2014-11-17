@@ -8,11 +8,18 @@ as well as style rules, all from a single script.
 
 // TODO: enclose scope
 
+// @everything UI napkin-wrapper
+var napkinwrapper = document.getElementById('napkin-wrapper');
+
+// Editor textarea elements
 var napkinhtml = document.getElementById('napkin-html');
 var napkincss = document.getElementById('napkin-css');
 var napkinjs = document.getElementById('napkin-js');
 var usermarkup = document.getElementById('napkin-markup');
 var userstyle = document.getElementById('napkin-style');
+
+// Opacity slider
+var opacitycontrol = document.getElementById('opacity-control');
 
 function markup_out() { usermarkup.innerHTML=(napkinhtml.value); }
 function style_out() { userstyle.innerHTML=(napkincss.value); }
