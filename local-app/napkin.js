@@ -21,10 +21,12 @@ var userstyle = document.getElementById('napkin-style');
 // Opacity slider
 var opacitycontrol = document.getElementById('opacity-control');
 
+// Send user source to DOM
 function markup_out() { usermarkup.innerHTML=(napkinhtml.value); }
 function style_out() { userstyle.innerHTML=(napkincss.value); }
 function js_out() { return eval(napkinjs.value); }
-   
+
+// UI events and functions
 napkinhtml.addEventListener('keyup' || 'keypress', markup_out, false);
 
 napkincss.addEventListener('keyup' || 'keypress', style_out, false);
