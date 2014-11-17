@@ -2,14 +2,8 @@
 
 /* This napkin.js file is for the 'local-app' version
 that includes the napkinpage.html and napkin-ui.css files.
-
-Other versions need to create the napkin ui elements,
+The load anywhere version needs to create the napkin ui elements,
 as well as style rules, all from a single script.
-These implementations will require much more code for 
-managing ui events, and the plug-in features system.
-NOTE:This version must be complete, with any further changes
-made here. Then the changes can be implemented into 
-subsequent napkin versions.
 */
 
 // TODO: enclose scope
@@ -24,14 +18,13 @@ function markup_out() { usermarkup.innerHTML=(napkinhtml.value); }
 function style_out() { userstyle.innerHTML=(napkincss.value); }
 function js_out() { return eval(napkinjs.value); }
    
-napkinhtml.addEventListener('keyup' || 'keypress', function() {
-    markup_out(); }, false);
+napkinhtml.addEventListener('keyup' || 'keypress', markup_out, false);
 
-napkincss.addEventListener('keyup' || 'keypress', function() {
-    style_out(); }, false);
+napkincss.addEventListener('keyup' || 'keypress', style_out, false);
 
 napkinjs.addEventListener('keypress', function(key) {
-    if (key.keyCode === 13) {
-        js_out();
-    }
-}, false);
+    if (key.keyCode === 13)    js_out();    }, false);
+
+opacitycontrol.addEventListener('input', function() {
+    napkinwrapper.style.opacity = opacitycontrol.value; }, false);
+    
