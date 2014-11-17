@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="napkin-ui.css">
   <script defer src="napkin.js"></script>    
 </head>
-<!--************************************************************************-->
 
 <body>
   <div id = "napkin-markup"> <!-- This is where users' html is 'sent'--> </div>
@@ -21,39 +20,14 @@
         <textarea class="napkin-editors" id="napkin-js" placeholder="js here"></textarea>  
       </section>
     
-    <span id = "napkin_controls">
-      <button class = "napkin-buttons">Plugins</button>           
-      <button class = "napkin-buttons">Imports</button>
-      <button class = "napkin-buttons">Settings</button>      
-    </span>    
+    <div class = "napkin_controls">
+      <input id = "opacity-control" type ="range" min="0.1" max="1" step="0.1" ></input>  
+    </div>
+    
   </div>  <!-- end div id: napkin-wrapper -->   
   
   <!-- This is where user css is sent --> 
   <style id = "napkin-style"></style>
-  
-  <!--  CONTENTS OF SETTINGS / CONFIG OPTION PAGES
-  
-  <div id = "controls-content-wrapper">
-    
-    <div class = "controls-content" id="plugins">    
-      <h1>plugin window</h1>
-      <button class = "napkin-buttons">Okay</button>
-      <button class = "napkin-buttons">Cancel</button>
-    </div>
-    
-    <div class = "controls-content" id="imports">
-      <h1>imports window</h1>
-      <button class = "napkin-buttons">Okay</button>
-      <button class = "napkin-buttons">Cancel</button>
-    </div>
-    
-    <div class = "controls-content" id="settings">
-      <h1>settings window</h1>
-      <button class = "napkin-buttons">Okay</button>
-      <button class = "napkin-buttons">Cancel</button>
-    </div>
-  
-  </div> -->
- 
+
 </body>
 </html>

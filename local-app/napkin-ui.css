@@ -13,6 +13,7 @@ body {
   padding:0;
 }
 
+/* The Napkin UI Container. */
 #napkin-wrapper {
   min-width:540px;
   max-width:98%;
@@ -32,7 +33,7 @@ body {
   color:#222; 
   box-shadow:0px 0px 5px 2px #333;
 }
-
+/* Each of the editor textareas. */
 .napkin-editors {
   min-width:250px;
   min-height:250px;
@@ -68,34 +69,29 @@ body {
 .napkin-editors:hover, .napkin-editors:focus {
   opacity:1;
 }
-
+/* A section element, parent to all editor textareas. */
 .editor-section {
   margin:5px auto;
   width:98%;    
+  overflow:auto;
+  padding:7px;
 }
 
-/* controls */
+/* UI controls. */
 
-#napkin-controls {
-    padding:3px;    
+.napkin-controls {
+  text-align:center; /* All that's needed for now until it holds more elements. */
 }
 
-.napkin-buttons {
-    padding:3px;
-    margin:0px, 3px, 0px, 3px;
-    border:solid 0px, 2px, 0px, 2px;
-    display:inline;
-    font-family:helvetica;   
-}
-
-#controls-content-wrapper {
-  line-height:0;
-  display:none;    
-}
-
-/* each controls page div */
-.controls-content {    
-
+#opacity-control {
+  width:150px;
+  background-color:#DDD;
+  color:#DDD;
+  padding:2px;
+  border-radius:3px;
+  border:solid 2px;
+  height:7px;
 }
 
 /* do #plugins, #imports, #settings */
+/* do media queries, touch support, simple theme / font controls */
