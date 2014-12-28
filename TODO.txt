@@ -1,38 +1,39 @@
 TODO.txt
 
 
-DONE:-Add event listeners on edit areas.
+[DONE] -Add event listeners on edit areas.
 
--Fix up 'too much opacity at start'
+[DONE] -Fix up 'too much opacity at start'
 
--Make opacity slider control.
+[DONE] -Make opacity slider control.
 
--All css correct and working / cross browser ?
+[ONGOING] -All css correct and working / cross browser ?
 
--Keyboard shortcuts for open / close.
+[URGENT] -Keyboard shortcuts for open / close.
 
--Implement controls to collapse individual or all editors.
+[FUTURE TAB SYSTEM] -Implement controls to collapse individual or all editors.
 
--Add bottom menu bar for selecting feature plug-ins, control settings, and lib importing.
+[RETHINK] -Add bottom menu bar for selecting feature plug-ins, control settings, and lib importing.
 -Do the imports, plugins, and settings content
 
-DONE:-Do an execute button.
+[DONE] -Do an execute button. (enter key on js editor)
 
--Do response element for the js editor(console / err output).
+[URGENT] -Do response element for the js editor(console / err output).
 
--Make editor 'detachable / reatachable' in and out of it's own window
 
--Save 'jots' with local storage
 
-MAYBE:-Add command line and custom commands.
+[URGENT] -Save 'jots' with local storage
+
+[MAYBE] -Add command line and custom commands.
       -These will manipulate napkin, the current page / dom context, and controls like save / copy etc.
 
+[URGENT SIMPLE FEW CASE SCENARIO]
 -Address cross-browser issues, screen sizes and orientation
     -NOTE: Doing napkin, or any web editor at all that would actually be good to use on smaller-screen mobile devices,
            is a largely different problem that napkin is not trying to address.
-
--Do wiki with pictures, examples, etc.
-
--Do release milestone of 'local-app' and 'ImportNapkin.js'
+           
+[FUTURE, TRICKY] -Make editor 'detachable / reatachable' in and out of it's own window
+[FUTURE] -Do wiki with pictures, examples, etc.
+[FUTURE] -Do release milestone of 'local-app' and 'ImportNapkin.js'
 
 
