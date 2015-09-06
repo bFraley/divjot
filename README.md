@@ -7,7 +7,7 @@ This project name has changed from napkin to Div-Jot because it
 seems there's a Mozilla project named napkin, that happens to be
 a webdev editor tool as well.
 
-[Try Div Jot] (http://bfraley.github.io/div-jot/local-app/napkinpage.html)
+[Try Div Jot] (http://bfraley.github.io/Div-Jot/local-app/napkinpage.html)
 
 ![001-napkin-screenshot](https://cloud.githubusercontent.com/assets/3700154/4605050/fe815290-51c9-11e4-85e0-9cc990819d11.png)
 
