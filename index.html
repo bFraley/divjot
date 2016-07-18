@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>jaunt</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="jaunt.css">
+  <link rel="stylesheet" href="lib/themes/prism.css">
+  
+  <script defer src="jaunt.js"></script>  
+  <script src="features/commands.js"></script>  
+  
+    <!-- prism.js code highlighting library -->   
+   <script src="lib/prism.js"></script>  
+</head>
+
+<body>
+  <div id="jaunt-markup"> <!-- This is where users' html is 'sent'--> </div>
+
+  <div id="jaunt-wrapper" spellcheck="false">        
+    <section class="editor-section">           
+      <textarea class="jaunt-editors" id="jaunt-html" placeholder=" html "></textarea>        
+      <textarea class="jaunt-editors" id="jaunt-css" placeholder=" css "></textarea>
+      <textarea class="jaunt-editors" id="jaunt-js" placeholder=" js "></textarea>
+    </section>  
+
+    <div class="jaunt_controls">
+      <button class="control-buttons" id="menu-button">menu</button>  
+      <input id="opacity-control" type ="range" min="0.1" max="1" step="0.1" ></input>
+      <button class="control-buttons" id="dark-button"> dark </button>
+      <button class="control-buttons" id="light-button">light</button>
+      <button class="control-buttons" id="fsize-smaller-button"> - </button>
+      <button class="control-buttons" id="fsize-bigger-button"> + </button>     
+      <button class="control-buttons" id="html-button"> html </button>
+      <button class="control-buttons" id="css-button"> css </button>
+      <button class="control-buttons" id="js-button"> js </button>
+    </div>    
+  </div>  <!-- end div id: jaunt-wrapper -->   
+  
+  <!-- This is where users' css is sent --> 
+  <style id = "jaunt-style"></style>
+</body>
+</html>
+

@@ -1,5 +1,3 @@
-TODO.txt
-
 
 [DONE] -Add event listeners on edit areas.
 
@@ -13,8 +11,9 @@ TODO.txt
 
 [FUTURE TAB SYSTEM] -Implement controls to collapse individual or all editors.
 
-[RETHINK] -Add bottom menu bar for selecting feature plug-ins, control settings, and lib importing.
--Do the imports, plugins, and settings content
+[RETHINK] -Add bottom menu bar for selecting feature plug-ins,
+           control settings, and lib importing.
+          -Do the imports, plugins, and settings content
 
 [DONE] -Do an execute button. (enter key on js editor)
 
@@ -25,15 +24,17 @@ TODO.txt
 [URGENT] -Save 'jots' with local storage
 
 [MAYBE] -Add command line and custom commands.
-      -These will manipulate napkin, the current page / dom context, and controls like save / copy etc.
+      -These will manipulate divjot, the current page / dom context,
+       and controls like save / copy etc.
 
 [URGENT SIMPLE FEW CASE SCENARIO]
--Address cross-browser issues, screen sizes and orientation
-    -NOTE: Doing napkin, or any web editor at all that would actually be good to use on smaller-screen mobile devices,
-           is a largely different problem that napkin is not trying to address.
+    -Address cross-browser issues, screen sizes and orientation
+    -NOTE: Doing divjot, or any web editor at all that would actually
+           be good to use on smaller-screen mobile devices,
+           is a largely different problem that divjot is not trying to address.
            
 [FUTURE, TRICKY] -Make editor 'detachable / reatachable' in and out of it's own window
 [FUTURE] -Do wiki with pictures, examples, etc.
-[FUTURE] -Do release milestone of 'local-app' and 'ImportNapkin.js'
+[FUTURE] -Do release milestone of 'local-app' and 'import-divjot.js'
 
 

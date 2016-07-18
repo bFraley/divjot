@@ -13,9 +13,9 @@ body {
   padding:0;
 }
 
-/* The Napkin UI Container. */
-#napkin-wrapper {
-  min-width:540px;
+/* The Jaunt UI Container. */
+#jaunt-wrapper {
+  min-width:440px;
   max-width:98%;
   max-height:98%;
   position:fixed;
@@ -24,51 +24,47 @@ body {
   padding:3px;
   z-index:1;
   overflow:auto;
-  opacity:0.4;
+  opacity:0.9;
   white-space:nowrap;
-  text-align:left;
+  text-align:center;
   font-family:monospace;
   font-size:1em;
   background-color:#fff;
-  color:#222; 
-  box-shadow:0px 0px 5px 2px #333;
+  color:#222;
+  border:solid 1px #ddd;
+  border-radius:7px;
+  /* box-shadow:0px 0px 5px 2px #333; */
 }
 /* Each of the editor textareas. */
-.napkin-editors {
+.jaunt-editors {
   min-width:250px;
   min-height:250px;
-  max-height:90%;
+  max-height:75%;
+  max-width:520px;
   padding:3px;
   display:inline-block;
   overflow:auto;
-  opacity:0.6;  
+  opacity:0.8;  
+  border-radius:7px;
+  border:solid 1px #ddd;
+  font-size:10pt;  
 }
 
-#napkin-html {  
-  border:solid 1px #008000; /* is green */
-  max-width:900px;
+#jaunt-html {  
+
 }
 
-#napkin-css {  
-  background-color:#EEE;
-  border:solid 1px #008fcc;
+#jaunt-css {  
+  background-color:#EEE;  
   max-width:520px;  
 }
 
-#napkin-js {
-  min-width:520px;
-  max-width:900px;
-  min-height:60px;
-  display:block;
-  border-bottom:solid 5px #ddd;
-  background-color:#555;
-  color:#00ff00; /* is lime */ 
+#jaunt-js {  
+  background-color:#555;  
+  color:#FFF;
 }
 
-#napkin-wrapper:hover, #napkin-wrapper:focus,
-.napkin-editors:hover, .napkin-editors:focus {
-  opacity:1;
-}
+
 /* A section element, parent to all editor textareas. */
 .editor-section {
   margin:5px auto;
@@ -79,18 +75,47 @@ body {
 
 /* UI controls. */
 
-.napkin-controls {
+.jaunt-controls {
   text-align:center; /* All that's needed for now until it holds more elements. */
 }
 
 #opacity-control {
-  width:150px;
+  width:100px;
   background-color:#DDD;
-  color:#DDD;
-  padding:2px;
+  color:#000;  
+  padding:3px;
   border-radius:3px;
-  border:solid 2px;
   height:7px;
+  border:solid 1px #ddd;
+}
+
+.control-buttons {
+    padding:3px;
+    border:solid 1px;
+    opacity:0.8;
+    border-radius:3px;
+    border:solid 1px #ddd;
+    margin-bottom:5px;
+}
+
+.control-buttons:hover {
+    opacity:1;
+    background-color:#EEE;
+}
+
+#dark-button {
+    background-color:#333;
+    color:#FFF;
+}
+
+#light-button {
+    background-color:#FFF;
+    color:#000;
+    display:none;
+}
+
+#menu-button {
+   margin-right:25px;
 }
 
 /* do #plugins, #imports, #settings */
