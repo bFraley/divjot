@@ -1,4 +1,4 @@
-/* TODO: doc comments / license / links etc */
+/* Copyright by Brett Fraley 2016 */
 
 html {
   font-size:100%;
@@ -13,8 +13,8 @@ body {
   padding:0;
 }
 
-/* The Jaunt UI Container. */
-#jaunt-wrapper {
+/* The divjot UI container. */
+#divjot-wrapper {
   min-width:440px;
   max-width:98%;
   max-height:98%;
@@ -36,7 +36,7 @@ body {
   /* box-shadow:0px 0px 5px 2px #333; */
 }
 /* Each of the editor textareas. */
-.jaunt-editors {
+.divjot-editors {
   min-width:250px;
   min-height:250px;
   max-height:75%;
@@ -50,20 +50,19 @@ body {
   font-size:10pt;  
 }
 
-#jaunt-html {  
+#divjot-html {  
 
 }
 
-#jaunt-css {  
+#divjot-css {  
   background-color:#EEE;  
   max-width:520px;  
 }
 
-#jaunt-js {  
+#divjot-js {  
   background-color:#555;  
   color:#FFF;
 }
-
 
 /* A section element, parent to all editor textareas. */
 .editor-section {
@@ -75,7 +74,7 @@ body {
 
 /* UI controls. */
 
-.jaunt-controls {
+.divjot-controls {
   text-align:center; /* All that's needed for now until it holds more elements. */
 }
 
@@ -118,5 +117,3 @@ body {
    margin-right:25px;
 }
 
-/* do #plugins, #imports, #settings */
-/* do media queries, touch support, simple theme / font controls */
