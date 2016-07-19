@@ -2,7 +2,9 @@
 awesomely plain live web editor
 
 ### Get started
-Simply clone or download it, and open index.html in a browser.
+[Try divjot] (https://bFraley.github.io/divjot)
+
+Or clone or download it, and open index.html in a browser.
 
 ### Use divjot for:
 - Jot down ideas in HTML, CSS, and JS.
