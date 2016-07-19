@@ -1,4 +1,5 @@
 // Copyright by Brett Fraley 2016
+(function() {
 
 var divjot_wrapper = document.getElementById('divjot-wrapper');
 
@@ -91,3 +92,4 @@ controls.css.addEventListener('click', function() { toggle(divjot_css); }, false
 
 controls.js.addEventListener('click', function() { toggle(divjot_js); }, false); 
 
+}());
