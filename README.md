@@ -1,12 +1,11 @@
 #divjot
-
 awesomely plain live web editor
 
 ### Get started
 Simply clone or download it, and open index.html in a browser.
 
-####Div Jot is for saving time, having fun, and:  
-- Jotting down ideas in HTML, CSS, and JS.
+### Use divjot for:
+- Jot down ideas in HTML, CSS, and JS.
 - Fast prototyping.
 - Trying out example code.
 - Developing and A/B testing web apps and sites.
