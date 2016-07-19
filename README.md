@@ -1,6 +1,6 @@
 #divjot
 
-awesomely plain live web editor, akin to a napkin
+awesomely plain live web editor
 
 ### Get started
 Simply clone or download it, and open index.html in a browser.
