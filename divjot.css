@@ -47,7 +47,8 @@ body {
   opacity:0.8;  
   border-radius:7px;
   border:solid 1px #ddd;
-  font-size:10pt;  
+  font-size:10pt;
+  letter-spacing:0.05em;  
 }
 
 .divjot-editors:focus,.control-buttons:focus {
