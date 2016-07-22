@@ -50,6 +50,11 @@ body {
   font-size:10pt;  
 }
 
+.divjot-editors:focus,.control-buttons:focus {
+  outline: none !important;
+  border:solid 1px #008fcc;  
+}
+
 #divjot-html {  
 
 }
