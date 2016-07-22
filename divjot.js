@@ -23,6 +23,8 @@ var controls = {
     fsize: 10
 };    
 
+controls.opacity.value = 100;
+
 /* Functions */
 
 // Send user source to DOM.
