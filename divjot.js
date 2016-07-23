@@ -20,9 +20,11 @@ var controls = {
     html: document.getElementById('html-button'),
     css: document.getElementById('css-button'),
     js: document.getElementById('js-button'),
+    run: document.getElementById('run-button'),
     fsize: 10
 };    
 
+// Set initial opacity to 100
 controls.opacity.value = 100;
 
 /* Functions */
@@ -31,6 +33,7 @@ controls.opacity.value = 100;
 function markup_out() { usermarkup.innerHTML=(divjot_html.value); }
 function style_out() { userstyle.innerHTML=(divjot_css.value); }
 function js_out() { return eval(divjot_js.value); }
+
 
 // Toggle 'show/hide' editors.
 function toggle(el) {
@@ -73,9 +76,6 @@ divjot_html.addEventListener('keyup' || 'keypress', markup_out, false);
 
 divjot_css.addEventListener('keyup' || 'keypress', style_out, false);
 
-divjot_js.addEventListener('keypress', function(key) {
-    if (key.keyCode === 13)    js_out();    }, false);
-
 // Control button event triggers.
 controls.opacity.addEventListener('input', function() {
     divjot_wrapper.style.opacity = controls.opacity.value; }, false);
@@ -93,5 +93,7 @@ controls.html.addEventListener('click', function() { toggle(divjot_html); }, fal
 controls.css.addEventListener('click', function() { toggle(divjot_css); }, false);
 
 controls.js.addEventListener('click', function() { toggle(divjot_js); }, false); 
+
+controls.run.addEventListener('click', function() { js_out(); }, false);
 
 }());
