@@ -45,30 +45,16 @@
 
     // Open or close all editors at once (for hotkeys)
     function openclose_editors() {
-	
-        editors = [divjot_html, divjot_css, divjot_js];
-
-        // If editors are closed, open them.
-        if (controls.closed) {
-
-            // Display editor if closed, do nothing if already open.
-            editors.forEach(function(editor) {
-                if (editor.style.display === "none")
-                    editor.style.display = "inline-block";
-            });
-
+	if (controls.closed) {
+            divjot_html.style.display = "inline-block";
+            divjot_css.style.display = "inline-block";
+            divjot_js.style.display = "inline-block";
             controls.closed = false;
         }
-
-        // Close all the editors.
         else {
-
-            // Hide if open, do nothing if already closed.
-            editors.forEach(function(editor) {
-                if (editor.style.display === "inline-block")
-                    editor.style.display = "none";
-                });
-
+            divjot_html.style.display = "none";
+            divjot_css.style.display = "none";
+            divjot_js.style.display = "none";
             controls.closed = true;
         }
     }
