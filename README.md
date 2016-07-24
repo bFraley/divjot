@@ -1,9 +1,11 @@
 #divjot
 awesomely plain live web editor
-
 ### Get started
 [Try divjot] (https://bFraley.github.io/divjot)
 or clone or download it, and open index.html in a browser.
+
+#### Hotkeys
+Press `Alt + space` to show or hide all 3 editors.
 
 ### Use divjot for:
 - Jot down ideas in HTML, CSS, and JS.
