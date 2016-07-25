@@ -32,15 +32,16 @@ body {
   background-color:#fff;
   color:#222;
   border:solid 1px #ccc;
+  border-bottom:solid 1px #000;
   border-radius:7px;
-  /* box-shadow:0px 0px 5px 2px #333; */
 }
+
 /* Each of the editor textareas. */
 .divjot-editors {
   min-width:250px;
   min-height:250px;
   max-height:75%;
-  max-width:520px;
+  max-width:700px;
   padding:3px;
   display:inline-block;
   overflow:auto;
@@ -65,7 +66,9 @@ body {
   max-width:520px;  
 }
 
-#divjot-js {  
+#divjot-js {
+  font-family:monospace;
+  font-weight:500;
   background-color:#555;  
   color:#FFF;
 }
