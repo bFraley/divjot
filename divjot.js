@@ -1,4 +1,7 @@
-// Copyright by Brett Fraley 2016
+/* divjot.js - Divjot Live Web Editor
+   Copyright by Brett Fraley 2014 - 2016
+*/
+
 (function() {
 
     var divjot_wrapper = document.getElementById('divjot-wrapper');
@@ -92,8 +95,8 @@
         controls.light.style.display = "none";
         controls.dark.style.display = "inline";
     }
-
-    /* Events */
+    
+    /* UI Events */
     
     /* Global Document events for divjot hotkeys */
     // ALT+C closes all editors. ALT+O (letter o) opens all editors.
@@ -110,7 +113,7 @@
 
     divjot_css.addEventListener('keyup' || 'keypress', style_out, false);
 
-    /* Control button event triggers. */
+    /* UI Control button event listeners */
 
     controls.opacity.addEventListener('input', function() {
         divjot_wrapper.style.opacity = controls.opacity.value; }, false);
@@ -130,5 +133,11 @@
     controls.js.addEventListener('click', function() { toggle(divjot_js); }, false); 
 
     controls.run.addEventListener('click', function() { js_out(); }, false);
+
+    divjot_import('test.js');
+
+
+
+
 
 }());
