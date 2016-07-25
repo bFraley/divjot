@@ -96,9 +96,18 @@
         controls.dark.style.display = "inline";
     }
     
+    // Append new JS file resource to <head>.
+
+    function divjot_import(filepath) {
+        h =  document.getElementsByTagName('head')[0];
+        script = document.createElement('script');
+        script.setAttribute('src', filepath);
+        h.appendChild(script);
+    }
+
     /* UI Events */
     
-    /* Global Document events for divjot hotkeys */
+    // Global Document events for divjot hotkeys.
     // ALT+C closes all editors. ALT+O (letter o) opens all editors.
 
     window.document.addEventListener('keydown', function(key) {
@@ -134,10 +143,13 @@
 
     controls.run.addEventListener('click', function() { js_out(); }, false);
 
-    divjot_import('test.js');
+    /* Import field listener
 
+    controls.import.addEventListener('keypress', function(key) {
+        if (key.which === 13)
+            return divjot_import(controls.import.value);
+    }, false);
 
-
-
+    */
 
 }());
