@@ -32,6 +32,7 @@ body {
   background-color:#fff;
   color:#222;
   border:solid 1px #ccc;
+  border-bottom:solid 1px #000;
   border-radius:7px;
 }
 
