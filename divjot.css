@@ -36,6 +36,21 @@ body {
   border-radius:7px;
 }
 
+#divjot-menu {
+  width:100%;
+  height:20px;
+  padding:5px;
+  border:solid 1px;
+  color: #333;
+  list-style:none;
+}
+
+#divjot-menu ul li {
+  display:inline-block;
+}
+
+
+
 /* Each of the editor textareas. */
 .divjot-editors {
   min-width:250px;
@@ -105,6 +120,7 @@ body {
     border-radius:3px;
     border:solid 1px #ddd;
     margin-bottom:5px;
+    letter-spacing:0.06em;
     font-weight:700;
 }
 
@@ -130,9 +146,5 @@ body {
   padding:5px;
   font-weight:500;
   letter-spacing:0.2em;
-}
-
-#menu-button {
-   margin-right:25px;
 }
 
