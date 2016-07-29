@@ -108,7 +108,7 @@
     /* UI Events */
     
     // Global Document events for divjot hotkeys.
-    // ALT+C closes all editors. ALT+O (letter o) opens all editors.
+    // alt + space opens and closes editors.
 
     window.document.addEventListener('keydown', function(key) {
         if (key.which === 32 && key.altKey) {
