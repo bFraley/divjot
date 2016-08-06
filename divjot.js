@@ -96,13 +96,42 @@
         controls.dark.style.display = "inline";
     }
     
-    // Append new JS file resource to <head>.
+    // Append new JS or CSS file resource to <head>.
 
     function divjot_import(filepath) {
+        error_msg = 'Error calling divjot_import ' + filepath + ' Please check the file path and try again.';
+
+        if (!filepath)
+            throw error_msg;
+
+        file_extensions = { js: '.js', css: '.css' };
+
         h =  document.getElementsByTagName('head')[0];
-        script = document.createElement('script');
-        script.setAttribute('src', filepath);
-        h.appendChild(script);
+
+        f_name = filepath;
+        f_length = f_name.length;
+        f_lastchar = f_name[f_length - 1]
+        
+        // Read extension indices of the file name string.
+        try_js = f_name[f_length - 3] + f_name[f_length - 2] + f_name[f_length - 1];
+        try_css = f_name[f_length - 4] + try_js;
+
+        // Does file name end with '.js' extension?
+        if (try_js === file_extensions.js) {
+            script = document.createElement('script');
+            script.setAttribute('src', f_name);
+            h.appendChild(script);
+        }
+        // Or does file name end with '.css' extension?
+        else if (try_css === file_extensions.css) {
+            stylesheet = document.createElement('link');
+            stylesheet.setAttribute('rel', "stylesheet");
+            stylesheet.setAttribute('href', f_name);
+            h.appendChild(stylesheet);
+        }
+        else {         
+            throw error_msg;   
+        }
     }
 
     /* UI Events */
