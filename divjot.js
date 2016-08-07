@@ -69,7 +69,8 @@
         else
             el.style.display = "none";
     }
-
+    
+    // Decrease editors' font-size.
     function font_smaller() {
         controls.fsize -= 2;
         divjot_html.style.fontSize = controls.fsize + "pt";
@@ -77,19 +78,22 @@
         divjot_js.style.fontSize = controls.fsize + "pt";
     }
 
+    // Increase editors' font-size.
     function font_bigger() {
         controls.fsize += 2;
         divjot_html.style.fontSize = controls.fsize + "pt";
         divjot_css.style.fontSize = controls.fsize + "pt";
         divjot_js.style.fontSize = controls.fsize + "pt";
     }
-
+    
+    // Switch to dark UI colors.
     function dark() {
         divjot_wrapper.style.backgroundColor = "#333";
         controls.dark.style.display = "none";
         controls.light.style.display = "inline";
     }
 
+    // Switch to light UI colors.
     function light() {
         divjot_wrapper.style.backgroundColor = "#FFF";
         controls.light.style.display = "none";
@@ -97,7 +101,6 @@
     }
     
     // Append new JS or CSS file resource to <head>.
-
     function divjot_import(filepath) {
         error_msg = 'Error calling divjot_import ' + filepath + ' Please check the file path and try again.';
 
@@ -110,7 +113,7 @@
 
         f_name = filepath;
         f_length = f_name.length;
-        f_lastchar = f_name[f_length - 1]
+        f_lastchar = f_name[f_length - 1];
         
         // Read extension indices of the file name string.
         try_js = f_name[f_length - 3] + f_name[f_length - 2] + f_name[f_length - 1];

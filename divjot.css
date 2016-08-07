@@ -113,31 +113,31 @@ body {
 }
 
 .control-buttons {
-    width:40px;
-    padding:3px;
-    border:solid 1px;
-    opacity:0.8;
-    border-radius:3px;
-    border:solid 1px #ddd;
-    margin-bottom:5px;
-    letter-spacing:0.06em;
-    font-weight:700;
+  width:40px;
+  padding:3px;
+  border:solid 1px;
+  opacity:0.8;
+  border-radius:3px;
+  border:solid 1px #ddd;
+  margin-bottom:5px;
+  letter-spacing:0.06em;
+  font-weight:700;
 }
 
 .control-buttons:hover {
-    opacity:1;
-    background-color:#EEE;
+  opacity:1;
+  background-color:#EEE;
 }
 
 #dark-button {
-    background-color:#333;
-    color:#FFF;
+  background-color:#333;
+  color:#FFF;
 }
 
 #light-button {
-    background-color:#FFF;
-    color:#000;
-    display:none;
+  background-color:#FFF;
+  color:#000;
+  display:none;
 }
 
 #run-button {
