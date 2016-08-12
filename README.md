@@ -4,6 +4,8 @@ awesomely plain live web editor
 [Try divjot] (https://bFraley.github.io/divjot)
 or clone or download it, and open index.html in a browser.
 
+If you whip up something cool, feel free to share a [screenshot] (https://github.com/bFraley/divjot/wiki/Screenshots) in the [divjot wiki !] (https://github.com/bFraley/divjot/wiki)
+
 #### Hotkeys
 Press `Alt + space` to show or hide all 3 editors.
 
