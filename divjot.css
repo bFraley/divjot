@@ -21,7 +21,7 @@ body {
   position:fixed;
   left:15px;
   bottom:15px;
-  padding:3px;
+  padding:9px;
   z-index:1;
   overflow:auto;
   opacity:0.9;
@@ -93,7 +93,8 @@ body {
   margin:5px auto;
   width:98%;    
   overflow:auto;
-  padding:7px;
+  padding:9px;
+  border-radius:7px;
 }
 
 /* UI controls. */
