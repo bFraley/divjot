@@ -36,6 +36,21 @@ body {
   border-radius:7px;
 }
 
+.top-ui-section {
+  width:98%;
+  margin:0px auto;
+  text-align:left;
+}
+
+.top-ui-section input {
+  border:solid 1px #999;
+  border-radius:25px;
+  color:#333;
+  display:inline-block;
+  padding:5px;
+  margin:0px 15px;  
+}
+
 #divjot-menu {
   width:100%;
   height:20px;
@@ -48,8 +63,6 @@ body {
 #divjot-menu ul li {
   display:inline-block;
 }
-
-
 
 /* Each of the editor textareas. */
 .divjot-editors {
@@ -67,7 +80,9 @@ body {
   letter-spacing:0.05em;  
 }
 
-.divjot-editors:focus,.control-buttons:focus {
+/* Eliminate default input focus outline. */
+
+.top-ui-section input:focus, .divjot-editors:focus, .control-buttons:focus {
   outline: none !important;
   border:solid 1px #008fcc;  
 }

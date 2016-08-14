@@ -12,6 +12,19 @@
 
   <div id="divjot-wrapper" spellcheck="false">
 
+    <section class="top-ui-section">
+      <label>Load Content</label>
+      <input id="user-fileinput" type="file"
+        title="Load HTML or other files from your computer into the HTML editor.">
+      </input>
+      
+      <label>Import</label>   
+      <input id="import-fileinput" type="text"
+        title="Import JS &amp; CSS file resources. Links are appended to the document <head>">
+      </input>
+      <button id="import-button"> + </button>
+    </section>
+
     <section class="editor-section">           
       <textarea class="divjot-editors" id="divjot-html" placeholder=" HTML "></textarea>        
       <textarea class="divjot-editors" id="divjot-css" placeholder=" CSS "></textarea>

@@ -31,6 +31,16 @@
     // Set initial opacity to 100
     controls.opacity.value = 100;
 
+    // Menu UI elements.
+    var menu = {
+        top_ui_section: document.getElementsByClassName('top-ui-section')[0],
+        user_fileinput: document.getElementById('user-fileinput'),
+        import_fileinput: document.getElementById('import-fileinput'),
+        import_button: document.getElementById('import-button'),
+        imported_list: []
+    };
+
+    
     /* Functions */
 
     // Send user source to DOM.
@@ -89,6 +99,7 @@
     // Switch to dark UI colors.
     function dark() {
         divjot_wrapper.style.backgroundColor = "#333";
+        menu.top_ui_section.style.color = "#eee";
         controls.dark.style.display = "none";
         controls.light.style.display = "inline";
     }
@@ -96,6 +107,7 @@
     // Switch to light UI colors.
     function light() {
         divjot_wrapper.style.backgroundColor = "#FFF";
+        menu.top_ui_section.style.color = "#333";
         controls.light.style.display = "none";
         controls.dark.style.display = "inline";
     }
@@ -137,6 +149,15 @@
         }
     }
 
+    // Load local file and read - for loading local html files
+    // or other content file into the html editor.
+
+    function get_user_file(file, onLoadCallback) {
+        var reader = new FileReader();
+        reader.onload = onLoadCallback;
+        reader.readAsText(file);
+    }
+
     /* UI Events */
     
     // Global Document events for divjot hotkeys.
@@ -175,13 +196,32 @@
 
     controls.run.addEventListener('click', function() { js_out(); }, false);
 
-    /* Import field listener
+    /* Menu UI event listeners */
 
-    controls.import.addEventListener('keypress', function(key) {
-        if (key.which === 13)
-            return divjot_import(controls.import.value);
+    // New file input event. Assign file content,
+    // and then append to divjot_html editor.
+
+    menu.user_fileinput.addEventListener('change', function(e) {
+
+        get_user_file(this.files[0], function(e) {
+            divjot_html.userfile = e.target.result;
+            divjot_html.value += divjot_html.userfile;
+            markup_out();
+        });
+    });
+
+    // Import field listener
+
+    menu.import_button.addEventListener('click', function(key) {
+        pathvalue = menu.import_fileinput.value;
+
+        if (pathvalue.length > 0) {
+            divjot_import(pathvalue);
+            menu.imported_list.push(pathvalue);
+            menu.import_fileinput.value = "";
+        }
+
     }, false);
 
-    */
-
 }());
+
