@@ -119,34 +119,24 @@
         if (!filepath)
             throw error_msg;
 
-        file_extensions = { js: '.js', css: '.css' };
-
         h =  document.getElementsByTagName('head')[0];
-
-        f_name = filepath;
-        f_length = f_name.length;
-        f_lastchar = f_name[f_length - 1];
-        
-        // Read extension indices of the file name string.
-        try_js = f_name[f_length - 3] + f_name[f_length - 2] + f_name[f_length - 1];
-        try_css = f_name[f_length - 4] + try_js;
+        f_length = filepath.length;
 
         // Does file name end with '.js' extension?
-        if (try_js === file_extensions.js) {
+        if (filepath.slice(-3, f_length) === '.js') {
             script = document.createElement('script');
-            script.setAttribute('src', f_name);
+            script.setAttribute('src', filepath);
             h.appendChild(script);
         }
         // Or does file name end with '.css' extension?
-        else if (try_css === file_extensions.css) {
+        else if (filepath.slice(-4, f_length) == '.css') {
             stylesheet = document.createElement('link');
             stylesheet.setAttribute('rel', "stylesheet");
-            stylesheet.setAttribute('href', f_name);
+            stylesheet.setAttribute('href', filepath);
             h.appendChild(stylesheet);
         }
-        else {         
+        else          
             throw error_msg;   
-        }
     }
 
     // Load local file and read - for loading local html files
